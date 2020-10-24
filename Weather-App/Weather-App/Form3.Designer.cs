@@ -47,14 +47,15 @@
             this.dataWeather.RowHeadersWidth = 51;
             this.dataWeather.RowTemplate.Height = 24;
             this.dataWeather.Size = new System.Drawing.Size(1028, 318);
-            this.dataWeather.TabIndex = 0;
+            this.dataWeather.TabIndex = 3;
+            this.dataWeather.TabStop = false;
             // 
             // refreshButton
             // 
             this.refreshButton.Location = new System.Drawing.Point(925, 400);
             this.refreshButton.Name = "refreshButton";
             this.refreshButton.Size = new System.Drawing.Size(95, 35);
-            this.refreshButton.TabIndex = 1;
+            this.refreshButton.TabIndex = 2;
             this.refreshButton.Text = "Refresh";
             this.refreshButton.UseVisualStyleBackColor = true;
             this.refreshButton.Click += new System.EventHandler(this.refreshButton_Click);
@@ -64,7 +65,7 @@
             this.searchButton.Location = new System.Drawing.Point(121, 13);
             this.searchButton.Name = "searchButton";
             this.searchButton.Size = new System.Drawing.Size(120, 35);
-            this.searchButton.TabIndex = 2;
+            this.searchButton.TabIndex = 1;
             this.searchButton.Text = "Search by date";
             this.searchButton.UseVisualStyleBackColor = true;
             this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
@@ -74,7 +75,7 @@
             this.searchTextBox.Location = new System.Drawing.Point(12, 19);
             this.searchTextBox.Name = "searchTextBox";
             this.searchTextBox.Size = new System.Drawing.Size(100, 22);
-            this.searchTextBox.TabIndex = 3;
+            this.searchTextBox.TabIndex = 0;
             // 
             // Form3
             // 

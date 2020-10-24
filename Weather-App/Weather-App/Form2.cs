@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Weather_App
@@ -23,6 +16,7 @@ namespace Weather_App
             {
                 User user = new User(textBox3.Text, textBox5.Text, textBox7.Text);
                 await User.AddUser(user);
+                Close();
             }
         }
     }

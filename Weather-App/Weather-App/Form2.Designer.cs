@@ -49,6 +49,7 @@
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(200, 38);
             this.textBox1.TabIndex = 0;
+            this.textBox1.TabStop = false;
             this.textBox1.Text = "Sign up";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -59,16 +60,17 @@
             this.textBox2.Location = new System.Drawing.Point(12, 94);
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(140, 21);
+            this.textBox2.Size = new System.Drawing.Size(150, 21);
             this.textBox2.TabIndex = 1;
+            this.textBox2.TabStop = false;
             this.textBox2.Text = "Login:";
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(161, 95);
+            this.textBox3.Location = new System.Drawing.Point(168, 95);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 22);
-            this.textBox3.TabIndex = 2;
+            this.textBox3.TabIndex = 0;
             // 
             // textBox4
             // 
@@ -77,16 +79,17 @@
             this.textBox4.Location = new System.Drawing.Point(12, 134);
             this.textBox4.Name = "textBox4";
             this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(140, 21);
+            this.textBox4.Size = new System.Drawing.Size(150, 21);
             this.textBox4.TabIndex = 3;
+            this.textBox4.TabStop = false;
             this.textBox4.Text = "Email:";
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(161, 134);
+            this.textBox5.Location = new System.Drawing.Point(168, 134);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(100, 22);
-            this.textBox5.TabIndex = 4;
+            this.textBox5.TabIndex = 1;
             // 
             // textBox6
             // 
@@ -95,17 +98,18 @@
             this.textBox6.Location = new System.Drawing.Point(12, 172);
             this.textBox6.Name = "textBox6";
             this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(140, 21);
+            this.textBox6.Size = new System.Drawing.Size(150, 21);
             this.textBox6.TabIndex = 5;
+            this.textBox6.TabStop = false;
             this.textBox6.Text = "Password:";
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(162, 171);
+            this.textBox7.Location = new System.Drawing.Point(169, 171);
             this.textBox7.Name = "textBox7";
             this.textBox7.PasswordChar = '*';
             this.textBox7.Size = new System.Drawing.Size(100, 22);
-            this.textBox7.TabIndex = 6;
+            this.textBox7.TabIndex = 2;
             // 
             // textBox8
             // 
@@ -114,24 +118,25 @@
             this.textBox8.Location = new System.Drawing.Point(12, 210);
             this.textBox8.Name = "textBox8";
             this.textBox8.ReadOnly = true;
-            this.textBox8.Size = new System.Drawing.Size(143, 21);
+            this.textBox8.Size = new System.Drawing.Size(150, 21);
             this.textBox8.TabIndex = 7;
+            this.textBox8.TabStop = false;
             this.textBox8.Text = "Repeat password:";
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(161, 209);
+            this.textBox9.Location = new System.Drawing.Point(168, 209);
             this.textBox9.Name = "textBox9";
             this.textBox9.PasswordChar = '*';
             this.textBox9.Size = new System.Drawing.Size(100, 22);
-            this.textBox9.TabIndex = 8;
+            this.textBox9.TabIndex = 3;
             // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(95, 260);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(95, 35);
-            this.button1.TabIndex = 9;
+            this.button1.TabIndex = 4;
             this.button1.Text = "Sign up";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
