@@ -102,7 +102,7 @@ namespace Weather_App
             string date = searchTextBox.Text;
             using (var db = new WeatherContext())
             {
-                var weathers = await(from weather in db.Weathers select weather).ToListAsync();
+                var weathers = await(from weather in db.Weathers orderby weather.Date descending select weather).ToListAsync();
                 table.Clear();
                 foreach (Weather weather in weathers)
                 {

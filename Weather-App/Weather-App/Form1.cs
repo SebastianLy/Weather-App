@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using System.Drawing;
 
 namespace Weather_App
 {
@@ -12,13 +13,21 @@ namespace Weather_App
 
         private void signInButton_Click(object sender, EventArgs e)
         {
-            User user = User.SignIn(new User(loginInputTextBox.Text, passwordInputTextBox.Text));
+            string password = User.Encode(passwordInputTextBox.Text);
+            User user = User.SignIn(new User(loginInputTextBox.Text, password));
             if (user != null)
             {
+                failedLoginTextBox.Visible = false;
                 Hide();
                 Form3 form3 = new Form3(user);
                 form3.ShowDialog();
                 Close();
+            }
+            else
+            {
+                failedLoginTextBox.Visible = true;
+                failedLoginTextBox.BackColor = failedLoginTextBox.BackColor;
+                failedLoginTextBox.ForeColor = Color.Red;
             }
         }
 
