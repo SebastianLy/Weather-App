@@ -17,12 +17,18 @@ namespace Weather_App
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void signInButton_Click(object sender, EventArgs e)
         {
-            User.SignIn(new User(textBox3.Text, textBox5.Text));
+            User user = User.SignIn(new User(loginInputTextBox.Text, passwordInputTextBox.Text));
+            if (user != null)
+            {
+                Form3 form3 = new Form3(user);
+                form3.ShowDialog();
+                Close();
+            }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void signUpButton_Click(object sender, EventArgs e)
         {
             Form2 form2 = new Form2();
             form2.ShowDialog();

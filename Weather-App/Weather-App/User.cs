@@ -16,8 +16,8 @@ namespace Weather_App
         public string Password { get; set; }
         public string Role { get; set; }
 
-        public User()
-        { }
+        public User() { }
+
         public User(string login, string email, string password)
         {
             Login = login;
@@ -39,7 +39,8 @@ namespace Weather_App
                 await db.SaveChangesAsync();
             }
         }
-        public static void SignIn(User user)
+
+        public static User SignIn(User user)
         {
             using (var db = new UserContext())
             {
@@ -49,12 +50,13 @@ namespace Weather_App
                     if (user1.Password == user.Password)
                     {
                         MessageBox.Show("Succesfull");
+                        return user1;
                     }
                     else
                         MessageBox.Show("Wrong login or password");
                 }
-            }
-            
+                return null;
+            }           
         }
     }
 
@@ -62,5 +64,4 @@ namespace Weather_App
     {
         public DbSet<User> Users { get; set; }
     }
-
 }

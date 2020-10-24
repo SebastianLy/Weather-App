@@ -42,15 +42,19 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(313, 26);
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBox1.Location = new System.Drawing.Point(40, 14);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(200, 38);
             this.textBox1.TabIndex = 0;
             this.textBox1.Text = "Sign up";
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(207, 96);
+            this.textBox2.Location = new System.Drawing.Point(21, 96);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 22);
             this.textBox2.TabIndex = 1;
@@ -58,14 +62,14 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(313, 96);
+            this.textBox3.Location = new System.Drawing.Point(127, 96);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 22);
             this.textBox3.TabIndex = 2;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(207, 135);
+            this.textBox4.Location = new System.Drawing.Point(21, 135);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(100, 22);
             this.textBox4.TabIndex = 3;
@@ -73,14 +77,14 @@
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(313, 135);
+            this.textBox5.Location = new System.Drawing.Point(127, 135);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(100, 22);
             this.textBox5.TabIndex = 4;
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(207, 173);
+            this.textBox6.Location = new System.Drawing.Point(21, 173);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(100, 22);
             this.textBox6.TabIndex = 5;
@@ -88,7 +92,7 @@
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(314, 172);
+            this.textBox7.Location = new System.Drawing.Point(128, 172);
             this.textBox7.Name = "textBox7";
             this.textBox7.PasswordChar = '*';
             this.textBox7.Size = new System.Drawing.Size(100, 22);
@@ -96,7 +100,7 @@
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(207, 211);
+            this.textBox8.Location = new System.Drawing.Point(21, 211);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(100, 22);
             this.textBox8.TabIndex = 7;
@@ -104,7 +108,7 @@
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(313, 210);
+            this.textBox9.Location = new System.Drawing.Point(127, 210);
             this.textBox9.Name = "textBox9";
             this.textBox9.PasswordChar = '*';
             this.textBox9.Size = new System.Drawing.Size(100, 22);
@@ -112,7 +116,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(272, 249);
+            this.button1.Location = new System.Drawing.Point(86, 249);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 9;
@@ -124,7 +128,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(282, 353);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox9);
             this.Controls.Add(this.textBox8);
@@ -136,7 +140,7 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.Text = "Sign up";
             this.ResumeLayout(false);
             this.PerformLayout();
 
