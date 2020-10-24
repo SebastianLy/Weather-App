@@ -48,12 +48,11 @@ namespace Weather_App
                 if (user1 != null)
                 {
                     if (user1.Password == user.Password)
-                    {
-                        MessageBox.Show("Succesfull");
                         return user1;
-                    }
                     else
-                        MessageBox.Show("Wrong login or password");
+                    {
+
+                    }
                 }
                 return null;
             }           

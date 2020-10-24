@@ -28,48 +28,77 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dataWeather = new System.Windows.Forms.DataGridView();
+            this.refreshButton = new System.Windows.Forms.Button();
+            this.searchButton = new System.Windows.Forms.Button();
+            this.searchTextBox = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dataWeather)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dataWeather
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(2, 56);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(798, 318);
-            this.dataGridView1.TabIndex = 0;
+            this.dataWeather.BackgroundColor = System.Drawing.Color.White;
+            this.dataWeather.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dataWeather.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataWeather.Location = new System.Drawing.Point(2, 56);
+            this.dataWeather.Name = "dataWeather";
+            this.dataWeather.ReadOnly = true;
+            this.dataWeather.RowHeadersVisible = false;
+            this.dataWeather.RowHeadersWidth = 51;
+            this.dataWeather.RowTemplate.Height = 24;
+            this.dataWeather.Size = new System.Drawing.Size(1028, 318);
+            this.dataWeather.TabIndex = 0;
             // 
-            // button1
+            // refreshButton
             // 
-            this.button1.Location = new System.Drawing.Point(372, 403);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Refresh";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.refreshButton.Location = new System.Drawing.Point(925, 400);
+            this.refreshButton.Name = "refreshButton";
+            this.refreshButton.Size = new System.Drawing.Size(95, 35);
+            this.refreshButton.TabIndex = 1;
+            this.refreshButton.Text = "Refresh";
+            this.refreshButton.UseVisualStyleBackColor = true;
+            this.refreshButton.Click += new System.EventHandler(this.refreshButton_Click);
+            // 
+            // searchButton
+            // 
+            this.searchButton.Location = new System.Drawing.Point(121, 13);
+            this.searchButton.Name = "searchButton";
+            this.searchButton.Size = new System.Drawing.Size(120, 35);
+            this.searchButton.TabIndex = 2;
+            this.searchButton.Text = "Search by date";
+            this.searchButton.UseVisualStyleBackColor = true;
+            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
+            // 
+            // searchTextBox
+            // 
+            this.searchTextBox.Location = new System.Drawing.Point(12, 19);
+            this.searchTextBox.Name = "searchTextBox";
+            this.searchTextBox.Size = new System.Drawing.Size(100, 22);
+            this.searchTextBox.TabIndex = 3;
             // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(1032, 447);
+            this.Controls.Add(this.searchTextBox);
+            this.Controls.Add(this.searchButton);
+            this.Controls.Add(this.refreshButton);
+            this.Controls.Add(this.dataWeather);
             this.Name = "Form3";
-            this.Text = "Form3";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Text = "Weather Data";
+            this.Load += new System.EventHandler(this.Form3_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataWeather)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView dataWeather;
+        private System.Windows.Forms.Button refreshButton;
+        private System.Windows.Forms.Button searchButton;
+        private System.Windows.Forms.TextBox searchTextBox;
     }
 }

@@ -23,7 +23,6 @@ namespace Weather_App
             {
                 User user = new User(textBox3.Text, textBox5.Text, textBox7.Text);
                 await User.AddUser(user);
-                Close();
             }
         }
     }

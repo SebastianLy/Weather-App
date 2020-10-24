@@ -42,12 +42,13 @@
             // 
             this.titleTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.titleTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.titleTextBox.Location = new System.Drawing.Point(40, 14);
+            this.titleTextBox.Location = new System.Drawing.Point(40, 15);
             this.titleTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.titleTextBox.Name = "titleTextBox";
             this.titleTextBox.ReadOnly = true;
             this.titleTextBox.Size = new System.Drawing.Size(200, 38);
-            this.titleTextBox.TabIndex = 0;
+            this.titleTextBox.TabIndex = 100;
+            this.titleTextBox.TabStop = false;
             this.titleTextBox.Text = "Sign in";
             this.titleTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -60,7 +61,8 @@
             this.loginTextBox.Name = "loginTextBox";
             this.loginTextBox.ReadOnly = true;
             this.loginTextBox.Size = new System.Drawing.Size(100, 21);
-            this.loginTextBox.TabIndex = 1;
+            this.loginTextBox.TabIndex = 100;
+            this.loginTextBox.TabStop = false;
             this.loginTextBox.Text = "Login:";
             // 
             // loginInputTextBox
@@ -69,7 +71,7 @@
             this.loginInputTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.loginInputTextBox.Name = "loginInputTextBox";
             this.loginInputTextBox.Size = new System.Drawing.Size(100, 22);
-            this.loginInputTextBox.TabIndex = 2;
+            this.loginInputTextBox.TabIndex = 0;
             // 
             // passwordTextBox
             // 
@@ -80,7 +82,8 @@
             this.passwordTextBox.Name = "passwordTextBox";
             this.passwordTextBox.ReadOnly = true;
             this.passwordTextBox.Size = new System.Drawing.Size(100, 21);
-            this.passwordTextBox.TabIndex = 3;
+            this.passwordTextBox.TabIndex = 100;
+            this.passwordTextBox.TabStop = false;
             this.passwordTextBox.Text = "Password:";
             // 
             // passwordInputTextBox
@@ -90,7 +93,7 @@
             this.passwordInputTextBox.Name = "passwordInputTextBox";
             this.passwordInputTextBox.PasswordChar = '*';
             this.passwordInputTextBox.Size = new System.Drawing.Size(100, 22);
-            this.passwordInputTextBox.TabIndex = 4;
+            this.passwordInputTextBox.TabIndex = 1;
             // 
             // signInButton
             // 
@@ -99,7 +102,7 @@
             this.signInButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.signInButton.Name = "signInButton";
             this.signInButton.Size = new System.Drawing.Size(90, 35);
-            this.signInButton.TabIndex = 5;
+            this.signInButton.TabIndex = 2;
             this.signInButton.Text = "Sign in";
             this.signInButton.UseVisualStyleBackColor = true;
             this.signInButton.Click += new System.EventHandler(this.signInButton_Click);
@@ -111,7 +114,7 @@
             this.signUpButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.signUpButton.Name = "signUpButton";
             this.signUpButton.Size = new System.Drawing.Size(90, 35);
-            this.signUpButton.TabIndex = 6;
+            this.signUpButton.TabIndex = 3;
             this.signUpButton.Text = "Sign up";
             this.signUpButton.UseVisualStyleBackColor = true;
             this.signUpButton.Click += new System.EventHandler(this.signUpButton_Click);
@@ -119,13 +122,14 @@
             // signUpTextBox
             // 
             this.signUpTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.signUpTextBox.Location = new System.Drawing.Point(36, 316);
+            this.signUpTextBox.Location = new System.Drawing.Point(20, 316);
             this.signUpTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.signUpTextBox.Name = "signUpTextBox";
             this.signUpTextBox.ReadOnly = true;
-            this.signUpTextBox.Size = new System.Drawing.Size(139, 15);
-            this.signUpTextBox.TabIndex = 7;
-            this.signUpTextBox.Text = "Don\'t have account?";
+            this.signUpTextBox.Size = new System.Drawing.Size(155, 15);
+            this.signUpTextBox.TabIndex = 100;
+            this.signUpTextBox.TabStop = false;
+            this.signUpTextBox.Text = "Don\'t have an account?";
             this.signUpTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Form1
