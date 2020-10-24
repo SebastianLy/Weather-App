@@ -46,13 +46,13 @@
             this.dataWeather.RowHeadersVisible = false;
             this.dataWeather.RowHeadersWidth = 51;
             this.dataWeather.RowTemplate.Height = 24;
-            this.dataWeather.Size = new System.Drawing.Size(1028, 318);
+            this.dataWeather.Size = new System.Drawing.Size(1028, 389);
             this.dataWeather.TabIndex = 3;
             this.dataWeather.TabStop = false;
             // 
             // refreshButton
             // 
-            this.refreshButton.Location = new System.Drawing.Point(925, 400);
+            this.refreshButton.Location = new System.Drawing.Point(925, 12);
             this.refreshButton.Name = "refreshButton";
             this.refreshButton.Size = new System.Drawing.Size(95, 35);
             this.refreshButton.TabIndex = 2;

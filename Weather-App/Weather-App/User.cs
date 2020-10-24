@@ -40,18 +40,37 @@ namespace Weather_App
         {
             using (var db = new UserContext())
             {
+                User user1 = (from dbuser in db.Users where dbuser.Login == user.Login && dbuser.Password == user.Password select dbuser).FirstOrDefault();
+                if (user1 != null)
+                    return user1;
+                return null;
+            }
+        }
+        public static string Encode(string password)
+        {
+            byte[] passwordBytes = System.Text.UnicodeEncoding.Unicode.GetBytes(password);
+            System.Security.Cryptography.HashAlgorithm hashAlgo = new System.Security.Cryptography.SHA256Managed();
+            byte[] hash = hashAlgo.ComputeHash(passwordBytes);
+            return System.Text.UnicodeEncoding.Unicode.GetString(hash);
+        }
+
+        public static bool[] IsUserUnique(User user)
+        {
+            bool[] unique = new bool[2];
+            using (var db = new UserContext())
+            {
                 User user1 = (from dbuser in db.Users where dbuser.Login == user.Login select dbuser).FirstOrDefault();
                 if (user1 != null)
-                {
-                    if (user1.Password == user.Password)
-                        return user1;
-                    else
-                    {
-
-                    }
-                }
-                return null;
-            }           
+                    unique[0] = false;
+                else
+                    unique[0] = true;
+                user1 = (from dbuser in db.Users where dbuser.Email == user.Email select dbuser).FirstOrDefault();
+                if (user1 != null)
+                    unique[1] = false;
+                else
+                    unique[1] = true;
+            }
+            return unique;
         }
     }
 

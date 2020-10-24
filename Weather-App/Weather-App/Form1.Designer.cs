@@ -36,6 +36,7 @@
             this.signInButton = new System.Windows.Forms.Button();
             this.signUpButton = new System.Windows.Forms.Button();
             this.signUpTextBox = new System.Windows.Forms.TextBox();
+            this.failedLoginTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // titleTextBox
@@ -132,11 +133,25 @@
             this.signUpTextBox.Text = "Don\'t have an account?";
             this.signUpTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // failedLoginTextBox
+            // 
+            this.failedLoginTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.failedLoginTextBox.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.failedLoginTextBox.Location = new System.Drawing.Point(95, 245);
+            this.failedLoginTextBox.Multiline = true;
+            this.failedLoginTextBox.Name = "failedLoginTextBox";
+            this.failedLoginTextBox.ReadOnly = true;
+            this.failedLoginTextBox.Size = new System.Drawing.Size(115, 35);
+            this.failedLoginTextBox.TabIndex = 101;
+            this.failedLoginTextBox.Text = "Wrong password or login";
+            this.failedLoginTextBox.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(282, 353);
+            this.Controls.Add(this.failedLoginTextBox);
             this.Controls.Add(this.signUpTextBox);
             this.Controls.Add(this.signUpButton);
             this.Controls.Add(this.signInButton);
@@ -164,6 +179,7 @@
         private System.Windows.Forms.Button signInButton;
         private System.Windows.Forms.Button signUpButton;
         private System.Windows.Forms.TextBox signUpTextBox;
+        private System.Windows.Forms.TextBox failedLoginTextBox;
     }
 }
 
