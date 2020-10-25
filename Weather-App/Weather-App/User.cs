@@ -48,10 +48,10 @@ namespace Weather_App
         }
         public static string Encode(string password)
         {
-            byte[] passwordBytes = System.Text.UnicodeEncoding.Unicode.GetBytes(password);
+            byte[] passwordBytes = System.Text.Encoding.Unicode.GetBytes(password);
             System.Security.Cryptography.HashAlgorithm hashAlgo = new System.Security.Cryptography.SHA256Managed();
             byte[] hash = hashAlgo.ComputeHash(passwordBytes);
-            return System.Text.UnicodeEncoding.Unicode.GetString(hash);
+            return System.Text.Encoding.Unicode.GetString(hash);
         }
 
         public static bool[] IsUserUnique(User user)

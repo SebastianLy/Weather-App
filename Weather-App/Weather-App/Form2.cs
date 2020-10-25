@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Windows.Forms;
-using System.Data.Entity;
 using System.Drawing;
 
 namespace Weather_App

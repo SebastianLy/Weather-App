@@ -40,13 +40,13 @@
             this.dataWeather.BackgroundColor = System.Drawing.Color.White;
             this.dataWeather.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dataWeather.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataWeather.Location = new System.Drawing.Point(2, 56);
+            this.dataWeather.Location = new System.Drawing.Point(1, 56);
             this.dataWeather.Name = "dataWeather";
             this.dataWeather.ReadOnly = true;
             this.dataWeather.RowHeadersVisible = false;
             this.dataWeather.RowHeadersWidth = 51;
             this.dataWeather.RowTemplate.Height = 24;
-            this.dataWeather.Size = new System.Drawing.Size(1028, 389);
+            this.dataWeather.Size = new System.Drawing.Size(1041, 390);
             this.dataWeather.TabIndex = 3;
             this.dataWeather.TabStop = false;
             // 
@@ -81,7 +81,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1032, 447);
+            this.ClientSize = new System.Drawing.Size(1043, 447);
             this.Controls.Add(this.searchTextBox);
             this.Controls.Add(this.searchButton);
             this.Controls.Add(this.refreshButton);
